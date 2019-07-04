@@ -11,4 +11,4 @@
 - moment：日期处理框架
 - rechart：图表框架
 - qrcode.react 二维码框架
-- crypto-js：加密解密框架
+- crypto-js：加密解密框架 
