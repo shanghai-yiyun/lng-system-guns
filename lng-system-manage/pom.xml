@@ -1,23 +1,20 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.stylefeng</groupId>
-    <artifactId>guns-parent</artifactId>
-    <version>1.0.0</version>
 
-    <name>guns-parent</name>
+    <groupId>com.lng168</groupId>
+    <artifactId>lng168-parent</artifactId>
     <packaging>pom</packaging>
-
+    <version>1.0.1-SNAPSHOT</version>
     <modules>
-        <module>guns-admin</module>
+        <module>article-core</module>
         <module>guns-core</module>
-        <module>guns-rest</module>
         <module>guns-generator</module>
-        <module>guns-gateway</module>
-        <module>guns-api</module>
-        <module>guns-user</module>
+        <module>article-api</module>
+        <module>article-gateway</module>
     </modules>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -28,7 +25,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <guns.version>1.0.0</guns.version>
+        <guns.version>1.0.1-SNAPSHOT</guns.version>
         <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
         <shiro.version>1.4.0</shiro.version>
         <mybatis-plus.version>2.3</mybatis-plus.version>
@@ -51,18 +48,18 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.stylefeng</groupId>
+                <groupId>com.lng168</groupId>
                 <artifactId>guns-generator</artifactId>
                 <version>${guns.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.stylefeng</groupId>
+                <groupId>com.lng168</groupId>
                 <artifactId>guns-core</artifactId>
                 <version>${guns.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.stylefeng</groupId>
-                <artifactId>guns-api</artifactId>
+                <groupId>com.lng168</groupId>
+                <artifactId>article-api</artifactId>
                 <version>${guns.version}</version>
             </dependency>
 

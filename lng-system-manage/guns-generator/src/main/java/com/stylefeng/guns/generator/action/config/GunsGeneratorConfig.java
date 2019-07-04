@@ -18,15 +18,15 @@ public class GunsGeneratorConfig extends AbstractGeneratorConfig {
         globalConfig.setBaseResultMap(true);
         globalConfig.setBaseColumnList(true);
         globalConfig.setOpen(false);
-        globalConfig.setAuthor("stylefeng");
+        globalConfig.setAuthor("lng168");
     }
 
     protected void dataSourceConfig() {
         dataSourceConfig.setDbType(DbType.MYSQL);
-        dataSourceConfig.setDriverName("com.mysql.jdbc.Driver");
+        dataSourceConfig.setDriverName("com.mysql.cj.jdbc.Driver");
         dataSourceConfig.setUsername("root");
-        dataSourceConfig.setPassword("root");
-        dataSourceConfig.setUrl("jdbc:mysql://127.0.0.1:3306/guns?characterEncoding=utf8");
+        dataSourceConfig.setPassword("lng168.Hw.3388");
+        dataSourceConfig.setUrl("jdbc:mysql://127.0.0.1:3306/lng168_system?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8");
     }
 
     protected void strategyConfig() {
@@ -36,19 +36,19 @@ public class GunsGeneratorConfig extends AbstractGeneratorConfig {
 
     protected void packageConfig() {
         packageConfig.setParent(null);
-        packageConfig.setEntity("com.stylefeng.guns.admin.common.persistence.model");
-        packageConfig.setMapper("com.stylefeng.guns.admin.common.persistence.dao");
-        packageConfig.setXml("com.stylefeng.guns.admin.common.persistence.dao.mapping");
+        packageConfig.setEntity("com.lng168.article.api.model");
+        packageConfig.setMapper("com.lng168.article.common.persistence.dao");
+        packageConfig.setXml("com.lng168.article.common.persistence.dao.mapping");
     }
 
     protected void contextConfig() {
-        contextConfig.setProPackage("com.stylefeng.guns.admin");
+        contextConfig.setProPackage("com.lng168.article.rest");
         contextConfig.setCoreBasePackage("com.stylefeng.guns.core");
-        contextConfig.setBizChName("字典管理");
-        contextConfig.setBizEnName("sysDict");
-        contextConfig.setModuleName("system");
+        contextConfig.setBizChName("会员管理");
+        contextConfig.setBizEnName("member");
+        contextConfig.setModuleName("member");
         contextConfig.setProjectPath("D:\\ideaSpace\\guns\\guns-admin");//写自己项目的绝对路径
-        contextConfig.setEntityName("SysDict");
+        contextConfig.setEntityName("Member");
         sqlConfig.setParentMenuName(null);//这里写已有菜单的名称,当做父节点
 
         /**

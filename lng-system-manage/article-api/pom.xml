@@ -9,20 +9,29 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>guns-generator</artifactId>
+    <artifactId>article-api</artifactId>
+    <packaging>jar</packaging>
+
+    <name>article-api</name>
+    <url>http://maven.apache.org</url>
+
     <dependencies>
         <dependency>
-            <groupId>com.lng168</groupId>
-            <artifactId>guns-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.ibeetl</groupId>
-            <artifactId>beetl</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generate</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+    </build>
 
 </project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lng168.article.common.persistence.dao.MemberMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lng168.article.api.model.Member">
+        <id column="id" property="id" />
+        <result column="mobile" property="mobile" />
+        <result column="password" property="password" />
+        <result column="nickname" property="nickname" />
+        <result column="timei" property="timei" />
+        <result column="timeu" property="timeu" />
+        <result column="app_last_online_time" property="appLastOnlineTime" />
+        <result column="referral_code" property="referralCode" />
+        <result column="member_level" property="memberLevel" />
+        <result column="closing_date" property="closingDate" />
+        <result column="pic_path" property="picPath" />
+        <result column="uuid" property="uuid" />
+        <result column="is_reminding" property="isReminding" />
+        <result column="autograph" property="autograph" />
+        <result column="openid" property="openid" />
+        <result column="type" property="type" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, mobile, password, nickname, timei, timeu, app_last_online_time, referral_code, member_level, closing_date, pic_path, uuid, is_reminding, autograph, openid, type
+    </sql>
+
+</mapper>
